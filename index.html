@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ja">
+<!-- このHTMLページは日本語で書きますという宣言 -->
+
+
+<!-- headタグの中はブラウザで表示されない部分になります -->
+
+<head>
+  <meta charset="UTF-8"> <!-- "UTF-8"という文字コードに設定 -->
+  <title>WEBデザイナー1年生のための授業</title> <!-- サイトタイトル -->
+  <link href="css/reset.css" rel="stylesheet" type="text/css"> <!-- ブラウザが本来持っているCSSを打ち消すCSSファイル -->
+  <link href="css/style.css" rel="stylesheet" type="text/css"> <!-- メインのCSSファイル -->
+  <link href="css/slide.css" rel="stylesheet" type="text/css"> <!-- スライダーのCSSファイル -->
+  <link href="css/menu.css" rel="stylesheet" type="text/css"> <!-- メニューのCSSファイル -->
+  <!-- ページ内リンクでジャンプする時にスムーズにスクロールするようになります(Javascript) -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // スムーズスクロール
+    $(function () {
+      // ページ内リンクをクリックすると
+      $('a[href^=#]').click(function () {
+        // スクロールスピード
+        var speed = 500;
+        // クリックしたリンク先を保存
+        var href = $(this).attr("href");
+        // クリックしたリンク先が#または空のときは
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // トップへ移動する
+        var position = target.offset().top;
+        // リンク先へスムーズに移動する
+        $("html, body").animate({
+          scrollTop: position
+        }, speed, "swing");
+        return false;
+      });
+    });
+  </script>
+  <!-- ページ内リンクでジャンプする時にスムーズにスクロールするようになります(Javascript) -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0"> <!-- レスポンシブ対応するために必要な記述になります -->
+</head>
+<!-- ここまでブラウザで表示されない部分になります -->
+
+
+
+<!-- ここからブラウザで表示される部分になります -->
+
+
+<body>
+  <div id="container">
+
+    <!-- PCサイドバーのメニューとスマホ下部のメニューのセクションがここから始まります -->
+    <div id="page-top">
+      <!-- PCサイドバーのメニューのセクションがここから始まります -->
+      <ul class="sp-none">
+        <li>
+          <p>
+            <a href="#">
+              <img src="images/pc-side-event-btn.png" alt="無料イベント">
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#">
+              <img src="images/pc-side-scool-btn.png" alt="スクール説明">
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#company">
+              <img src="images/pc-side-company-btn.png" alt="運営者情報">
+            </a>
+          </p>
+        </li>
+      </ul>
+      <!-- PCサイドバーのメニューのセクションがここで終わります -->
+
+      <!-- スマホ下部のメニューのセクションがここから始まります -->
+      <div class="pc-none">
+        <ul class="sp_menu">
+          <li class="right">
+            <p>
+              <a href="#">
+                <img src="images/sp_btn1.png" alt="無料イベント">
+              </a>
+            </p>
+          </li>
+          <li class="left">
+            <p>
+              <a href="#">
+                <img src="images/sp_btn2.png" alt="スクール説明">
+              </a>
+            </p>
+          </li>
+          <li class="right">
+            <p>
+              <a href="#company">
+                <img src="images/sp_btn3.png" alt="運営者情報">
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- スマホ下部のメニューのセクションがここで終わります -->
+    </div>
+    <!-- サイドバーのメニューとスマホ下部のメニューのセクションがここで終わります -->
+
+
+    <header class="header">
+      <!-- ヘッダーTOPの画像です -->
+      <img src="images/fv_logo.jpg" alt="Webデザイン入門ヘッダー画像">
+      <!-- ヘッダーTOP直下のナビメニューのセクションがここから始まります -->
+      <!-- <img src="images/fv_navi.jpg" alt=""> -->
+      <nav>
+        <ul>
+          <li><a href="#">無料<br class="pc-none">イベント</a></li>
+          <li><a href="#school">スクール<br class="pc-none">説明会</a></li>
+          <li><a href="#company">運営者<br class="pc-none">情報</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ヘッダーTOP直下のナビメニューのセクションがここで終わります -->
+
+
+    <main>
+      <!-- FVのセクションがここから始まります -->
+      <div class="fv">
+        <img src="images/fv_img.jpg" alt="ファーストビュー上部の装飾">
+      </div>
+      <!-- FVのセクションがここで終わります -->
+
+
+      <!-- 申し込み周りのセクションがここから始まります -->
+      <div class="seminar2">
+        <div class="contents_2">
+          <img class="absolute" src="images/seminar.jpg" alt="">
+        </div>
+        <!-- 申し込みボタンのコードはここから始まります -->
+        <a href="#form">
+          <img class="main_btn" src="images/botton_01.png" alt="今すぐ席を確保する（参加無料）">
+        </a>
+        <!-- 申し込みボタンのコードはここで終わります -->
+        <!-- lineボタンのコードはここから始まります -->
+        <a href="#form">
+          <img class="line_btn" src="images/botton_02.png" alt="今すぐ席を確保する（参加無料）">
+        </a>
+        <!-- lineボタンのコードがここで終わります -->
+      </div>
+      <!-- 申し込み周りのセクションがここで終わります -->
+
+
+
+      <!-- 協賛企業様一覧のセクションがここから始まります -->
+      <section class="news">
+        <img src="images/news.jpg" alt="共産企業様一覧">
+        <!-- 企業ロゴのスライダーの記述箇所になります -->
+        <!-- <div id="top-page">
+            <div id="mainimage" role="presentation">
+            </div>
+          </div> -->
+        <!-- 企業ロゴのスライダーの記述箇所になります -->
+      </section>
+      <!-- 協賛企業様一覧のセクションがここで終わります -->
+
+
+
+      <!-- Recommendのセクションがここから始まります -->
+      <section class="recommend">
+        <img src="images/recommend_01.jpg" alt=" こんな方へオススメ">
+      </section>
+      <!-- Recommendのセクションがここで終わります -->
+
+
+
+      <!-- そんなあなたのためのイベントがこのWEBデザイナー1年生のための授業です -->
+      <div class="event-lead">
+        <img src="images/recommend_02.jpg" alt="">
+      </div>
+      <!-- そんなあなたのためのイベントがこのWEBデザイナー1年生のための授業です -->
+
+
+
+      <!-- 本イベントで得られることのセクションがここから始まります -->
+      <section class="topics">
+        <img src="images/topics.jpg" alt="WEBデザイナー1年生のための授業の装飾">
+      </section>
+      <!-- 本イベントで得られることのセクションがここで終わります -->
+
+
+
+      <!-- イベントの参加方法のセクションがここから始まります -->
+      <section class="join">
+        <img src="images/join.jpg" alt="イベントの参加方法">
+      </section>
+      <!-- イベントの参加方法のセクションがここで終わります -->
+
+      <!-- お問い合わせボタンのセクションがここから始まります -->
+      <a href="#form">
+        <img class="join_main_btn" src="images/botton_01.png" alt="今すぐ席を確保する（参加無料）">
+      </a>
+
+      <!-- お問い合わせボタンのセクションがここで終わります -->
+      <!-- 本イベントは株式会社Live出版が主催していますのセクションがここから始まります -->
+      <section class="company">
+        <img src="images/company_01.jpg" alt="本イベントは株式会社Live出版が主催しています">
+
+        <!-- 運営者情報の表がここから始まります -->
+        <img src="images/company_02.jpg" alt="会社情報">
+        <!-- <table id="company" class="company_info"> -->
+      </section>
+
+      <!-- 運営者情報の表がここで終わります -->
+      <!-- 本イベントは株式会社Live出版が主催していますのセクションがここで終わります -->
+
+
+
+      <!-- お問い合わせボタンのセクションがここから始まります -->
+      <a href="#form">
+        <img class="company_main_btn" src="images/botton_01.png" alt="今すぐ席を確保する（参加無料）">
+      </a>
+      <!-- お問い合わせボタンのセクションがここで終わります -->
+
+
+
+      <!-- イベント登壇者のセクションがここから始まります -->
+      <section class="speaker">
+        <img src="images/eventer.jpg" alt="イベント登壇者">
+      </section>
+      <!-- イベント登壇者のセクションがここで終わります -->
+
+
+      <!-- イベント参加者の声のセクションがここから始まります -->
+      <section class="voice">
+        <img src="images/voice.jpg" alt="イベント参加者の声">
+      </section>
+      <!-- イベント参加者の声のセクションがここで終わります -->
+
+
+
+      <!-- よくある質問のセクションがここから始まります -->
+      <section class="questions">
+        <img src="images/q&a.jpg" alt="よくある質問">
+      </section>
+      <!-- よくある質問のセクションがここで終わります -->
+
+      <!-- 位置付けセクションがここから始まります -->
+      <section class="position">
+        <img src="images/position.jpg" alt="位置付け">
+      </section>
+      <!-- 位置付けセクションがここで終わります -->
+
+
+
+      <!-- イベント参加特典のセクションがここから始まります -->
+      <section class="present">
+        <img src="images/present.jpg" alt="WEBデザイナー1年生のための授業の装飾">
+      </section>
+      <!-- イベント参加特典のセクションがここで終わります -->
+
+
+
+      <!-- イベント申し込みのセクションがここから始まります -->
+      <div class="form">
+        <img src="images/form.jpg" alt="イベント申し込み">
+      </div>
+      <!-- ここがフォーム埋め込みコードになります -->
+      <div class="widget_wrapper">
+        <div class="widget_wrapper">
+          <div class="ewp_form_container ewp_widget_container" webinar_id="uNLqLUico4H7wmgEcVlrww=="></div>
+          <script type="text/javascript" src="https://ewpcdn-ecs.easywebinar.com/widget/js/ewp_widget.js?v=1.32.14">
+          </script>
+        </div>
+      </div>
+      <!-- ここがフォーム埋め込みコードになります -->
+      <div class="center">
+        <!-- lineボタンのコードはここから始まります -->
+        <a href="https://liff.line.me/1656275336-EGOk9m5L/landing?follow=%40377xdwci&lp=oSCTr0&liff_id=1656275336-EGOk9m5L">
+          <img class="line_btn" src="images/botton_02.png" alt="上記日程以外のお申し込みはこちらから">
+        </a>
+        <!-- lineボタンのコードがここで終わります -->
+        <div class="step">
+          <img src="images/formstep.jpg" alt="申し込みステップ">
+        </div>
+      </div>
+      <!-- イベント申し込みのセクションがここで終わります -->
+    </main>
+
+
+    <!-- フッターのセクションがここから始まります -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul>
+          <li><a href="https://live-publishing.jp/company/" target="_blank"><span>会社概要</span></a></li>
+          <li><a href="https://live-publishing.jp/privacy/" target="_blank"><span>個人情報保護</span></a></li>
+          <li><a href="https://live-publishing.jp/rules/" target="_blank"><span>免責事項・利用規約</span></a></li>
+          <li><a href="https://live-publishing.jp/law/" target="_blank"><span>特定商取引法に基づく表示</span></a></li>
+          <li><a href="https://live-publishing.jp/contact/" target="_blank"><span>問い合わせ</span></a></li>
+        </ul>
+      </div>
+      <p class="copy">Copyright 株式会社Live出版 All Rights Reserved.</p>
+    </footer>
+    <!-- フッターのセクションがここで終わります -->
+  </div>
+</body>
+
+</html>

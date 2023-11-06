@@ -1,0 +1,53 @@
+/*=============================
+スライドロゴ用追記フォーム
+ =============================*/
+ #top-page #mainimage{
+	text-align:center;
+	height: 161px;
+	background:url(../images/new_lp_logo.png) no-repeat center #ddd;
+}
+
+[role="presentation"] {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/new_lp_logo.png);
+  -webkit-animation: wood linear 20s infinite;
+  animation: wood linear 20s infinite;
+  background-position: 1243px 161px;
+}
+
+@-webkit-keyframes frames {
+  0% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  75%,
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes frames {
+  0% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  75%,
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes wood {
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes wood {
+  100% {
+    background-position: 0 0;
+  }
+}

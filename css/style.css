@@ -1,0 +1,1799 @@
+@charset "UTF-8";
+
+/*
+------------------------------------------------------------------------------------------------------------
+共通部分CSS
+------------------------------------------------------------------------------------------------------------
+*/
+body {
+	/*全体の背景色*/
+	color: #4d4d4d;
+	background: #f5f5f5;
+	/*全体の文字色*/
+	font-family: "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
+	/*全体のフォント設定*/
+}
+
+img {
+	width: 100%;
+	vertical-align: bottom;
+	/*横幅設定*/
+}
+
+.relative {
+	position: relative;
+	/*要素の位置をずらす(相対関係)*/
+}
+
+h1 {
+	/*行間設定*/
+	padding: 15px;
+	color: #393939;
+	/*文字色設定*/
+	font-size: 75px;
+	/*文字サイズ*/
+	line-height: 1.2;
+	/*内側の余白設定*/
+}
+
+h2 {
+	/*行間設定*/
+	padding-top: 60px;
+	/*内側上の余白設定*/
+	padding-bottom: 40px;
+	/*文字の太さ設定*/
+	color: #4d4d4d;
+	font-size: 2.25rem;
+	/*文字サイズ*/
+	font-weight: bold;
+	/*文字色設定*/
+	line-height: 1.3;
+	/*内側下の余白設定*/
+}
+
+.recommend h2 span {
+	font-size: 24px;
+	/*文字サイズ*/
+	font-weight: 500;
+	/*文字の太さ設定*/
+}
+
+.h2_size_24 {
+	/*文字の太さ設定*/
+	padding-top: 20px;
+	/*内側上の余白設定*/
+	color: #c8c8c8;
+	font-size: 1.5rem;
+	/*文字サイズ*/
+	font-weight: 500;
+	/*文字色設定*/
+}
+
+.h3 {
+	/*行間設定*/
+	padding-top: 60px;
+	/*文字の太さ設定*/
+	color: #0a498c;
+	font-size: 1.875rem;
+	/*文字サイズ*/
+	font-weight: bold;
+	/*文字色設定*/
+	line-height: 1.4;
+	/*内側上の余白設定*/
+}
+
+h4 {
+	/*文字サイズ*/
+	float: left;
+	margin-top: 20px;
+	/*外側上の余白設定*/
+	margin-left: 45px;
+	/*外側左の余白設定*/
+	font-size: 24px;
+	/*要素を左に配置*/
+}
+
+.size_20 {
+	/*文字サイズ*/
+	padding: 20px 80px 60px;
+	font-size: 1.25rem;
+	/*内側の余白設定*/
+}
+
+.sp-none {
+	display: block !important;
+	/*PC画面で表示*/
+}
+
+.sp_none {
+	display: block !important;
+	/*PC画面で表示*/
+}
+
+.pc-none {
+	display: none !important;
+	/*PC画面で非表示*/
+}
+
+.pc_none {
+	display: none !important;
+	/*PC画面で非表示*/
+}
+
+@media screen and (max-width: 768px) {
+	.sp-none {
+		display: none !important;
+		/*SP画面で非表示*/
+	}
+
+	.sp_none {
+		display: none !important;
+		/*SP画面で非表示*/
+	}
+
+	.pc-none {
+		display: block !important;
+		/*SP画面で表示*/
+	}
+
+	.pc_none {
+		display: block !important;
+		/*SP画面で表示*/
+	}
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+表のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+table {
+	width: 100%;
+	/*文字サイズ*/
+	border-spacing: 0;
+	/*横幅設定*/
+	font-size: 100%;
+	/*表組み内のボーダーの隣り合うセルの境界線の間隔を設定*/
+}
+
+td, th {
+	/*外枠の設定*/
+	padding: 10px 20px 7px;
+	border: 1px solid #bbb;
+	/*行間設定*/
+	background: #fff;
+	/*内側の余白設定*/
+	line-height: 1.8;
+	/*背景色設定*/
+}
+
+th {
+	width: 25%;
+	/*横幅設定*/
+	background: #ddd;
+	/*背景色設定*/
+	font-weight: normal;
+	/*文字の太さ設定*/
+}
+
+.company_info {
+	margin-top: 40px;
+	/*外側上の余白設定*/
+}
+
+.company_info a {
+	/*文字色設定*/
+	text-decoration: underline;
+	color: #0072bc;
+	/*テキストに下線を表示する*/
+}
+
+.center {
+	text-align: center;
+	/*ブロック要素を中央配置*/
+}
+
+.disclaimer {
+	overflow-y: scroll;
+	/*高さ設定*/
+	width: 70%;
+	/*要素を縦方向にスクロールして表示する*/
+	height: 100px;
+	/*文字色設定*/
+	margin: 20px auto 0;
+	/*横幅設定*/
+	padding: 1em;
+	/*外側の余白設定*/
+	text-align: left;
+	/*文字サイズ*/
+	color: #888;
+	/*内側の余白設定*/
+	font-size: 80%;
+	/*ブロック要素を左配置*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+メニューCSS
+------------------------------------------------------------------------------------------------------------
+*/
+nav {
+	/*ブロック要素を中央配置*/
+	height: 64px;
+	text-align: center;
+	/*高さ設定*/
+	background-color: #49bcbe;
+	/*背景色設定*/
+}
+
+nav ul {
+	margin: 0;
+	/*外側の余白設定*/
+	padding: 0;
+	/*内側の余白設定*/
+}
+
+nav li {
+	/*マーカーの非表示*/
+	display: inline-block;
+	/*インライン要素に設定*/
+	width: 30%;
+	/*横幅設定*/
+	min-width: 90px;
+	/*最小の横幅設定*/
+	padding-top: 2%;
+	/*内側上の余白設定*/
+	padding-bottom: 2%;
+	list-style: none;
+	/*内側下の余白設定*/
+}
+
+nav li:not(:last-child) {
+	border-right: 1px solid #ffffff;
+	/*右外枠の設定*/
+}
+
+nav a {
+	text-decoration: none;
+	/*文字サイズ*/
+	color: #fff;
+	/*テキストの下線の非表示*/
+	font-size: 150%;
+	/*文字色設定*/
+}
+
+nav a:hover {
+	color: #fffbc6;
+	/*文字色設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+リンク（全般）設定のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+a {
+	/*文字色設定*/
+	text-decoration: none;
+	color: #555;
+	/*テキストの下線の非表示*/
+}
+
+a:hover {
+	color: #006ddc;
+	/*文字色設定*/
+}
+
+a:hover img {
+	position: relative;
+	/*要素の位置をずらす(相対関係)*/
+	top: 3pt;
+	/*要素の位置を下に3ptずらす*/
+	left: 3pt;
+	/*要素の位置を右に3ptずらす*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+コンテナー（HPを囲むブロック）のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+#container {
+	width: 750px;
+	/*右外枠の設定*/
+	margin: 0 auto;
+	/*左外枠の設定*/
+	border-right: 1px solid #ccc;
+	/*背景色設定*/
+	border-left: 1px solid #ccc;
+	/*コンテナー幅*/
+	background-color: #fff;
+	/*外側の余白設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+FVのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.fv-lead {
+	height: 80px;
+	/*高さ設定*/
+	margin-top: 10px;
+	/*外側上の余白設定*/
+	text-align: center;
+	/*ブロック要素を中央配置*/
+	background-image: url(../images/fv_02.png);
+	/*Webデザイン体験オンラインイベントのテキストの両サイドの吹き出し*/
+	background-repeat: no-repeat;
+	/*背景画像を繰り返さない*/
+}
+
+.fv-lead__text {
+	/*文字色設定*/
+	padding-top: 10px;
+	/*文字の太さ設定*/
+	color: #27476e;
+	font-size: 1.8rem;
+	/*行間設定*/
+	font-weight: bold;
+	/*文字サイズ*/
+	line-height: 1.2;
+	/*内側上の余白設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+申し込み周りのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.seminar2 {
+	/*ブロック要素を中央配置*/
+	padding-bottom: 50px;
+	/*背景色設定*/
+	text-align: center;
+	background-color: #fffbc6;
+}
+
+.contents_2 {
+	position: relative;
+	/*要素の位置をずらす(相対関係)*/
+}
+
+.php {
+	position: absolute;
+	/*要素の位置をずらす(絶対関係)*/
+	top: 120px;
+	/*上から120px下に配置*/
+	left: 55px;
+	/*文字の太さ設定*/
+	text-align: center;
+	/*左から55px右に配置*/
+	color: #112e5a;
+	/*文字色設定*/
+	font-size: 230%;
+	/*行間設定*/
+	font-weight: bold;
+	/*文字サイズ*/
+	line-height: 1.2;
+	/*ブロック要素を中央配置*/
+}
+
+.php_02 {
+	position: absolute;
+	/*要素の位置をずらす(絶対関係)*/
+	top: 120px;
+	/*上から120px下に配置*/
+	left: 55px;
+	/*文字の太さ設定*/
+	text-align: center;
+	/*左から55px右に配置*/
+	color: #112e5a;
+	/*文字色設定*/
+	font-size: 230%;
+	/*行間設定*/
+	font-weight: bold;
+	/*文字サイズ*/
+	line-height: 1.2;
+	/*ブロック要素を中央配置*/
+}
+
+.main_btn {
+	/*外側上の余白設定*/
+	width: 90%;
+	margin-top: 30px;
+	/*横幅設定*/
+}
+
+.join_main_btn {
+	/* margin-top: -300px;
+	margin-bottom: 119px; */
+	position: relative;
+	width: 90%;
+	transform: translate(5%,-180%);
+}
+
+.company_main_btn {
+	/* margin-top: -300px;
+	margin-bottom: 119px; */
+	position: relative;
+	width: 90%;
+	transform: translate(5%,-160%);
+}
+
+.line_btn {
+	/*外側上の余白設定*/
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 70px;
+	/*横幅設定*/
+}
+
+.line_btn2 {
+	/*外側上の余白設定*/
+	width: 70%;
+	margin-top: 50px;
+	/*横幅設定*/
+}
+
+.step {
+	margin-top: 50px;
+	/*外側上の余白設定*/
+}
+
+.seireki {
+	/*文字サイズ*/
+	color: #112e5a;
+	font-size: 80%;
+	/*文字色設定*/
+}
+
+.nen {
+	font-size: 60%;
+	/*文字サイズ*/
+}
+
+.btn {
+	display: flex;
+	/*要素を横並びに設定*/
+	justify-content: flex-end;
+	/*要素を横並びにして右端に配置*/
+}
+
+.sponsorship {
+	/*文字色設定*/
+	padding-bottom: 0;
+	color: #26466d;
+	/*内側下の余白設定*/
+}
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+こんな方へオススメのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.recommend {
+	height: auto;
+	/*背景色設定*/
+	background-color: #eeeeee;
+	/*内側下の余白設定*/
+}
+
+.recommend__head {
+	text-align: center;
+}
+
+.recommend__head img {
+	width: 65%;
+}
+
+.recommend__main {
+	/*横幅設定*/
+	display: block;
+	width: 85%;
+	/*ブロック要素に設定*/
+	margin: 0 auto;
+	/*外側の余白設定*/
+}
+
+.recommend__items {
+	display: flex;
+	/*要素を横並びにして余白をもって等間隔に配置*/
+	flex-wrap: wrap;
+	/*要素を横並びに設定*/
+	justify-content: space-between;
+	/*要素を横並びにして1行で収まりきらなかったら改行する*/
+}
+
+.recommend_img {
+	width: 64px;
+	/*横幅設定*/
+	height: auto;
+	/*高さ設定*/
+}
+
+.recommend__item {
+	display: inline-block;
+	/*インライン要素に設定*/
+	width: 205px;
+	/*横幅設定*/
+	height: auto;
+	/*影の設定*/
+	margin-top: 20px;
+	/*背景色設定*/
+	padding: 20px 10px;
+	/*外側上の余白設定*/
+	text-align: center;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*ブロック要素を中央配置*/
+	background-color: #fff;
+	/*要素の角丸設定*/
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	/*内側の余白設定*/
+}
+
+.recommend p {
+	padding-top: 20px;
+	/*行間設定*/
+	letter-spacing: -1px;
+	/*文字間設定*/
+	color: #336699;
+	/*内側上の余白設定*/
+	font-size: 19px;
+	/*文字サイズ*/
+	font-weight: 500;
+	/*文字の太さ設定*/
+	line-height: 1.5;
+	/*文字色設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+本イベントで得られることのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.topics {
+	/*背景色設定*/
+	background-color: #eaf4fe;
+}
+
+.topics_box {
+	width: 660px;
+	/*横幅設定*/
+	margin-left: 45px;
+	/*影の設定*/
+	text-align: center;
+	/*背景色設定*/
+	border-radius: 5px;
+	/*外側左の余白設定*/
+	background-color: #fff;
+	/*要素の角丸設定*/
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	/*ブロック要素を中央配置*/
+}
+
+.topics_box h3 {
+	padding-top: 40px;
+	/*内側上の余白設定*/
+}
+
+.topics_box p {
+	/*文字の太さ設定*/
+	padding: 30px;
+	/*内側の余白設定*/
+	text-align: justify;
+	/*行間設定*/
+	letter-spacing: 0.05em;
+	font-size: 1.375rem;
+	/*文字サイズ*/
+	font-weight: 500;
+	/*テキストを均等割り付けする設定*/
+	line-height: 1.5;
+	/*文字間設定*/
+}
+
+.topics_box02 {
+	width: 16px;
+	/*横幅設定*/
+	height: 30px;
+	/*背景色設定*/
+	margin: 0 auto;
+	/*高さ設定*/
+	background-color: #cbe0f5;
+	/*外側の余白設定*/
+}
+
+.event_topics_img01, .event_topics_img02, .event_topics_img03, .event_topics_img04, .event_topics_img05 {
+	margin-top: 30px;
+}
+
+.event_topics_img01 {
+	width: 45%;
+	/*横幅設定*/
+}
+
+.event_topics_img02 {
+	width: 55%;
+	/*横幅設定*/
+}
+
+.event_topics_img03 {
+	width: 35%;
+	/*横幅設定*/
+}
+
+.event_topics_img04 {
+	width: 55%;
+	/*横幅設定*/
+}
+
+.event_topics_img05 {
+	width: 90%;
+	/*横幅設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+イベントの参加方法のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+
+.join_box {
+	width: 100%;
+	text-align: center;
+	/*背景色設定*/
+	border-radius: 5px;
+	/*横幅設定*/
+	background-color: #fff;
+	/*要素の角丸設定*/
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	/*ブロック要素を中央配置*/
+}
+
+.join_box img {
+	margin-top: 20px;
+	/*外側上の余白設定*/
+}
+
+.join_box_img01 {
+	width: 45%;
+	/*横幅設定*/
+}
+
+.join_box_img02 {
+	width: 70%;
+	/*横幅設定*/
+}
+
+.join_box_img03 {
+	width: 58%;
+	/*横幅設定*/
+}
+
+.join_box h3 {
+	padding-top: 20px;
+	/*内側上の余白設定*/
+}
+
+.join_box p {
+	/*文字サイズ*/
+	padding-top: 20px;
+	/*内側上の余白設定*/
+	padding-bottom: 30px;
+	font-size: 24px;
+	/*内側下の余白設定*/
+}
+
+.btn {
+	/*外側の余白設定*/
+	width: 70%;
+	margin: 60px auto;
+	/*横幅設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+本イベントは株式会社Live出版が主催していますのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+
+.company_box {
+	width: 100%;
+	/*横幅設定*/
+	height: 255px;
+	/*要素の角丸設定*/
+	margin-top: 55px;
+	/*外側上の余白設定*/
+	padding-top: 25px;
+	/*内側上の余白設定*/
+	padding-left: 35px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*内側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+.size_30 {
+	font-size: 1.875rem;
+	/*文字サイズ*/
+}
+
+.size_30 span {
+	vertical-align: middle;
+	/*縦の中央配置*/
+	color: #6cd1c3;
+	/*文字色設定*/
+}
+
+.size_24 {
+	font-size: 1.5rem;
+	/*文字サイズ*/
+}
+
+.size_16 {
+	padding-left: 20px;
+	/*内側左の余白設定*/
+}
+
+hr {
+	width: 350px;
+	/*横幅設定*/
+	margin: 20px 0;
+	/*外側の余白設定*/
+}
+
+.absolute_img {
+	position: absolute;
+	/*外側左の余白設定*/
+	width: 250px;
+	/*横幅設定*/
+	height: 200px;
+	/*要素の位置をずらす(絶対関係)*/
+	margin-top: -170px;
+	/*外側上の余白設定*/
+	margin-left: 350px;
+	/*高さ設定*/
+}
+
+.map {
+	margin-bottom: 40px;
+	/*外側下の余白設定*/
+}
+
+.company_box2 {
+	width: 100%;
+	/*横幅設定*/
+	height: 255px;
+	/*要素の角丸設定*/
+	margin-top: 20px;
+	/*外側上の余白設定*/
+	padding-top: 25px;
+	/*内側上の余白設定*/
+	padding-left: 35px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*内側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+.company_box3 {
+	width: 100%;
+	/*横幅設定*/
+	height: 245px;
+	/*要素の角丸設定*/
+	margin-top: 20px;
+	/*外側上の余白設定*/
+	padding-top: 25px;
+	/*内側上の余白設定*/
+	padding-left: 35px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*内側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+イベント登壇者のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.speaker {
+	/*高さ設定*/
+	position: relative;
+	/*外側の余白設定*/
+	height: 980px;
+	/*要素の位置をずらす(相対関係)*/
+	margin: 120px 0;
+}
+
+
+.speaker_p {
+	position: absolute;
+	/*要素の位置をずらす(絶対関係)*/
+	top: 55%;
+	/*上から55%下に配置*/
+	left: 60%;
+	/*文字の太さ設定*/
+	text-align: right;
+	/*左から60%右に配置*/
+	color: #fff;
+	/*ブロック要素を右配置*/
+	font-family: "游明朝";
+	/*文字色設定*/
+	font-size: 1.5rem;
+	/*文字サイズ*/
+	font-weight: 400;
+	line-height: 1.5;
+	/*行間設定*/
+}
+
+.size_48 {
+	font-size: 3rem;
+	/*文字サイズ*/
+}
+
+.speaker_box {
+	position: absolute;
+	/*要素の位置をずらす(絶対関係)*/
+	top: 75%;
+	/*上から75%下に配置*/
+	background-color: rgba(0, 0, 0, 0.5);
+	/*背景色設定*/
+}
+
+.speaker_box p {
+	padding: 45px;
+	/*行間設定*/
+	text-align: justify;
+	/*内側の余白設定*/
+	color: #fff;
+	/*文字色設定*/
+	font-size: 18px;
+	/*文字サイズ*/
+	font-weight: 500;
+	/*文字の太さ設定*/
+	line-height: 1.4;
+	/*テキストを均等割り付けする設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+イベント参加者の声のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.voice_box {
+	margin-bottom: 20px;
+	/*外側下の余白設定*/
+}
+
+.voice_hr {
+	/*外側の余白設定*/
+	width: 660px;
+	margin: 0 45px;
+	/*横幅設定*/
+}
+
+.caution {
+	margin: 20px 45px;
+	/*外側の余白設定*/
+	text-align: right;
+	/*ブロック要素を右配置*/
+	color: #838383;
+	/*文字色設定*/
+}
+
+.date {
+	margin-top: 20px;
+	/*外側上の余白設定*/
+	margin-right: 45px;
+	/*外側右の余白設定*/
+	text-align: right;
+	/*文字サイズ*/
+	color: #838383;
+	/*ブロック要素を右配置*/
+	font-size: 1.25rem;
+	/*文字色設定*/
+}
+
+.evaluation {
+	margin-top: 10px;
+	/*外側上の余白設定*/
+	margin-bottom: 10px;
+	/*外側下の余白設定*/
+	margin-left: 45px;
+	/*文字サイズ*/
+	text-align: left;
+	/*ブロック要素を左配置*/
+	color: #6cd1c3;
+	/*外側左の余白設定*/
+	font-size: 1.25rem;
+	/*文字色設定*/
+}
+
+.voice_p {
+	margin: 0 45px;
+	/*文字サイズ*/
+	text-align: justify;
+	/*外側の余白設定*/
+	font-size: 1.25rem;
+	/*テキストを均等割り付けする設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+よくある質問のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.question {
+	margin: 120px 0;
+	/*外側の余白設定*/
+}
+
+.gray_bg {
+	height: 100px;
+	/*高さ設定*/
+	background: #eee;
+	/*背景色設定*/
+}
+
+
+.question_box {
+	width: 600px;
+	/*横幅設定*/
+	height: 140px;
+	/*要素の角丸設定*/
+	margin-top: 35px;
+	margin-right: 45px;
+	/*外側右の余白設定*/
+	margin-left: 110px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*外側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+.question_box_02 {
+	width: 600px;
+	/*横幅設定*/
+	height: 105px;
+	/*要素の角丸設定*/
+	margin-top: 35px;
+	/*外側上の余白設定*/
+	margin-right: 45px;
+	/*外側右の余白設定*/
+	margin-left: 110px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*外側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+.question_box_03 {
+	width: 600px;
+	/*横幅設定*/
+	height: 75px;
+	/*要素の角丸設定*/
+	margin-top: 35px;
+	/*外側上の余白設定*/
+	margin-right: 45px;
+	/*外側右の余白設定*/
+	margin-left: 110px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*外側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+.question_box_04 {
+	width: 600px;
+	/*横幅設定*/
+	height: 135px;
+	/*要素の角丸設定*/
+	margin-top: 35px;
+	/*外側上の余白設定*/
+	margin-right: 45px;
+	/*外側右の余白設定*/
+	margin-left: 110px;
+	/*高さ設定*/
+	border-radius: 5px;
+	/*外側左の余白設定*/
+	background-color: #f6f5f3;
+	/*背景色設定*/
+}
+
+.question_h {
+	margin-top: 0;
+	/*外側上の余白設定*/
+	margin-left: 10px;
+	/*外側左の余白設定*/
+}
+
+.question p {
+	padding: 20px;
+	/*内側の余白設定*/
+	text-align: justify;
+	/*テキストを均等割り付けする設定*/
+	font-size: 20px;
+	/*文字サイズ*/
+}
+
+.tokuten01 {
+	width: 660px;
+	/*要素の影の設定*/
+	margin: 0 45px;
+	/*横幅設定*/
+	border-radius: 5px;
+	/*要素の角丸設定*/
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	/*外側の余白設定*/
+}
+
+.form {
+	margin-top: 120px;
+	/*外側上の余白設定*/
+}
+
+.form_img {
+	margin-top: 50px;
+	/*外側上の余白設定*/
+	margin-bottom: 20px;
+	/*外側下の余白設定*/
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+FooterのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+.footer {
+	width: 100%;
+	/*横幅設定*/
+	height: auto;
+	/*背景色設定*/
+	padding-top: 20px;
+	/*高さ設定*/
+	color: #292929;
+	/*文字色設定*/
+	background-color: #ffffff;
+}
+
+.footer__inner {
+	text-align: left;
+	/*ブロック要素を左配置*/
+}
+
+.footer__inner a {
+	/*内側左の余白設定*/
+	/*footerの矢印画像の設定*/
+	display: block;
+	width: 100%;
+	padding: 5px 50px;
+	/*文字色設定*/
+	padding-left: 5px;
+	/*内側の余白設定*/
+	color: #292929;
+}
+
+.footer__inner a::before {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	content: "";
+	background: url(../images/listmark-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.footer__inner li {
+	position: relative;
+	padding: 8px;
+	/*下外枠の設定*/
+	list-style: none;
+	/*文字サイズ*/
+	border-bottom: 1px solid #f0f3f5;
+	/*内側の余白設定*/
+	font-size: 120%;
+}
+
+.footer__inner li span::after {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	margin-top: -10px;
+	content: ">";
+	color: #48bdbd;
+	font-size: 15px;
+}
+
+.footer__inner a:hover {
+	color: #606060;
+}
+
+footer p.copy {
+	/*ブロック要素を中央配置*/
+	padding: 20px 0;
+	text-align: center;
+	/*内側の余白設定*/
+	font-size: 90%;
+	/*文字サイズ*/
+}
+
+
+
+/*
+===================================================================================================================================
+スマホ版のCSS
+===================================================================================================================================
+*/
+
+@media screen and (max-width: 768px) {
+	.questions img, .position img {
+		max-width: 100%;
+		height: atuo;
+	}
+
+	h1 {
+		/*文字サイズ*/
+		padding: 5px;
+		font-size: 250%;
+		/*内側の余白設定*/
+	}
+
+	h2 {
+		/*行間設定*/
+		padding-top: 60px;
+		/*内側上の余白設定*/
+		padding-bottom: 40px;
+		/*文字の太さ設定*/
+		text-align: center;
+		/*ブロック要素を中央配置*/
+		color: #4d4d4d;
+		font-size: 180%;
+		/*文字サイズ*/
+		font-weight: bold;
+		/*文字色設定*/
+		line-height: 1.3;
+		/*内側下の余白設定*/
+	}
+
+	.h3 {
+		/*行間設定*/
+		padding-top: 60px;
+		/*内側左の余白設定*/
+		padding-right: 4%;
+		/*内側上の余白設定*/
+		padding-left: 4%;
+		/*文字の太さ設定*/
+		text-align: center;
+		/*ブロック要素を中央配置*/
+		color: #0a498c;
+		font-size: 130%;
+		/*文字サイズ*/
+		font-weight: bold;
+		/*文字色設定*/
+		line-height: 1.4;
+		/*内側左の余白設定*/
+	}
+
+	h4 {
+		/*文字サイズ*/
+		float: none;
+		margin-top: 20px;
+		/*外側上の余白設定*/
+		margin-left: 4%;
+		/*外側左の余白設定*/
+		font-size: 120%;
+		/*floatの初期値*/
+	}
+
+	.size_20 {
+		/*文字サイズ*/
+		padding: 20px 4% 60px;
+		font-size: 100%;
+		/*内側の余白設定*/
+	}
+
+	/*
+------------------------------------------------------------------------------------------------------------
+メニューCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.sp_menu {
+		display: flex;
+		/*横幅設定*/
+		flex-direction: row;
+		/*要素を横並びに設定*/
+		width: 100%;
+		/*内側の余白設定*/
+		margin-bottom: -2px;
+		/*フレックスアイテムの配置方向を指定(初期値)*/
+		padding: 0;
+		/*外側下の余白設定*/
+	}
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+コンテナー（HPを囲むブロック）のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	#container {
+		width: 100%;
+		/*横幅設定*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+FVのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+
+	.fv-lead {
+		height: 50px;
+		/*高さ設定*/
+		margin-top: 10px;
+		/*外側上の余白設定*/
+		text-align: center;
+		/*ブロック要素を中央配置*/
+		background-image: url(../images/fv_02.png);
+		/*縦横比を保ったまま、背景画像が領域に収まる表示サイズに調整*/
+		background-repeat: no-repeat;
+		/*Webデザイン体験オンラインイベントのテキストの両サイドの吹き出し*/
+		background-size: contain;
+		/*背景画像を繰り返さない*/
+	}
+
+	.fv-lead p {
+		font-size: 90%;
+		/*文字サイズ*/
+	}
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+申し込み周りのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.contents_2 {
+		position: relative;
+		/*要素の位置をずらす(相対関係)*/
+		height: auto;
+		/*高さ設定*/
+	}
+
+	.php {
+		position: absolute;
+		/*要素の位置をずらす(絶対関係)*/
+		top: 37%;
+		/*上から37%下に配置*/
+		left: 6%;
+		/*左から6%右に配置*/
+		color: #112e5a;
+		/*文字色設定*/
+		font-size: 130%;
+		/*行間設定*/
+		font-weight: bold;
+		/*文字サイズ*/
+		line-height: 1.1;
+		/*文字の太さ設定*/
+	}
+
+	.php_02 {
+		position: absolute;
+		/*要素の位置をずらす(絶対関係)*/
+		top: 38%;
+		/*上から38%下に配置*/
+		left: 6%;
+		/*左から6%右に配置*/
+		color: #112e5a;
+		/*文字色設定*/
+		font-size: 130%;
+		/*行間設定*/
+		font-weight: bold;
+		/*文字サイズ*/
+		line-height: 1.1;
+		/*文字の太さ設定*/
+	}
+
+	.absolute a {
+		/*横幅設定*/
+		top: 66%;
+		/*上から66%下に配置*/
+		left: 10%;
+		width: 80%;
+		/*左から10%右に配置*/
+	}
+
+	.main_btn {
+		/*外側上の余白設定*/
+		width: 80% !important;
+		margin-top: 10px;
+		/*横幅設定*/
+		vertical-align: bottom;
+		/*要素を縦の下端に設定*/
+	}
+
+	.line_btn {
+		width: 70%;
+		/*横幅設定*/
+		margin-top: 25px;
+		/*外側上の余白設定*/
+	}
+
+	.line_btn2 {
+		width: 70%;
+		/*横幅設定*/
+		margin-top: 30px;
+		/*外側上の余白設定*/
+	}
+
+	.step {
+		margin-top: 30px;
+		/*外側上の余白設定*/
+	}
+
+	.btn {
+		width: 80%;
+		/*横幅設定*/
+		height: 80%;
+		/*高さ設定*/
+		margin: 60px 10%;
+		/*外側の余白設定*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+こんな方へオススメのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.recommend__items {
+		flex-wrap: wrap;
+		/*要素を横並びにして1行で収まりきらなかったら改行する*/
+		margin: 0 4%;
+		/*外側の余白設定*/
+	}
+
+	.recommend p {
+		padding-top: 20px;
+		/*行間設定*/
+		letter-spacing: -1px;
+		/*文字間設定*/
+		color: #336699;
+		/*内側上の余白設定*/
+		font-size: 100%;
+		/*文字サイズ*/
+		font-weight: 500;
+		/*文字の太さ設定*/
+		line-height: 1.5;
+		/*文字色設定*/
+	}
+
+	.recommend__main {
+		width: 100%;
+		/*横幅設定*/
+	}
+
+	.recommend__item {
+		display: inline-block;
+		/*インライン要素に設定*/
+		width: 47.5%;
+		/*横幅設定*/
+		height: auto;
+		/*影の設定*/
+		margin-top: 20px;
+		/*背景色設定*/
+		padding: 20px 10px;
+		/*外側上の余白設定*/
+		text-align: center;
+		/*高さ設定*/
+		border-radius: 5px;
+		/*ブロック要素を中央配置*/
+		background-color: #fff;
+		/*要素の角丸設定*/
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+		/*内側の余白設定*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+本イベントで得られることのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.topics {
+		padding-bottom: 30px;
+	}
+
+	.topics_box {
+		width: 92%;
+		/*横幅設定*/
+		margin-left: 4%;
+		/*外側左の余白設定*/
+	}
+
+	.topics_box p {
+		font-size: 100%;
+		/*文字サイズ*/
+	}
+
+	.gray_bg {
+		height: 50px;
+		/*高さ設定*/
+	}
+
+	.recommend__head img {
+		width: 95%;
+		/*横幅設定*/
+	}
+
+	.event_topics_img01 {
+		width: 88%;
+		/*横幅設定*/
+	}
+
+	.event_topics_img02 {
+		width: 90%;
+		/*横幅設定*/
+	}
+
+	.event_topics_img03 {
+		width: 67%;
+		/*横幅設定*/
+	}
+
+	.event_topics_img04 {
+		width: 85%;
+		/*横幅設定*/
+	}
+
+	.event_topics_img05 {
+		width: 90%;
+		/*横幅設定*/
+	}
+
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+イベントの参加方法のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.join_box {
+		width: 100%;
+		/*横幅設定*/
+	}
+
+	.join_box p {
+		font-size: 100%;
+		/*文字サイズ*/
+	}
+
+	.join_box_img01 {
+		width: 90%;
+		/*横幅設定*/
+	}
+
+	.join_box_img02 {
+		width: 90%;
+		/*横幅設定*/
+	}
+
+	.join_box_img03 {
+		width: 90%;
+		/*横幅設定*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+本イベントは株式会社Live出版が主催していますのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.company_box {
+		width: 100%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin-top: 30px;
+		/*外側上の余白設定*/
+		padding: 5% 5%;
+		/*内側の余白設定*/
+	}
+
+	.company_box2 {
+		width: 100%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin-top: 20px;
+		/*外側上の余白設定*/
+		padding: 5% 5%;
+		/*内側の余白設定*/
+	}
+
+	.company_box3 {
+		width: 100%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin-top: 20px;
+		/*外側上の余白設定*/
+		padding: 5% 5%;
+		/*内側の余白設定*/
+	}
+
+	.absolute_img {
+		position: static;
+		/*内側の余白設定*/
+		width: 100%;
+		/*横幅設定*/
+		height: 100%;
+		/*要素の位置設定(初期値)*/
+		margin: 0;
+		/*外側の余白設定*/
+		padding: 5% 0;
+		/*高さ設定*/
+	}
+
+	hr {
+		width: 98%;
+		/*横幅設定*/
+	}
+
+	.size_24 {
+		font-size: 100%;
+		/*文字サイズ*/
+	}
+
+	.size_30 {
+		font-size: 160%;
+		/*文字サイズ*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+イベント登壇者のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.speaker {
+		/*高さ設定*/
+		position: relative;
+		height: 550px;
+		/*要素の位置をずらす(相対関係)*/
+		margin: 80px 0;
+		/*外側の余白設定*/
+	}
+
+	.speaker_p {
+		position: absolute;
+		/*文字サイズ*/
+		top: 60%;
+		/*左から0%右に配置*/
+		right: 4%;
+		/*上から60%下に配置*/
+		left: 0;
+		/*要素の位置をずらす(絶対関係)*/
+		color: #fff;
+		/*右から4%左に配置*/
+		text-shadow: 1px 2px 3px #000;
+		/*文字色設定*/
+		font-size: 100%;
+		/*テキストに影をつける設定*/
+	}
+
+	.size_48 {
+		font-size: 150%;
+		/*文字サイズ*/
+	}
+
+	.speaker_box p {
+		padding: 4%;
+		/*文字サイズ*/
+		color: #fff;
+		/*内側の余白設定*/
+		font-size: 100%;
+		/*文字色設定*/
+	}
+
+	.speaker_box span {
+		display: none;
+		/*要素を非表示に設定*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+イベント参加者の声のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	.voice_hr {
+		/*外側の余白設定*/
+		width: 92%;
+		margin: 0 4%;
+		/*横幅設定*/
+	}
+
+	.caution {
+		margin: 20px 4%;
+		/*外側の余白設定*/
+		text-align: center;
+		/*ブロック要素を中央配置*/
+	}
+
+	.date {
+		/*文字サイズ*/
+		float: right;
+		margin-top: 10px;
+		/*外側上の余白設定*/
+		margin-right: 4%;
+		/*外側右の余白設定*/
+		text-align: right;
+		/*ブロック要素を右配置*/
+		font-size: 90%;
+		/*要素を右に配置*/
+	}
+
+	.evaluation {
+		margin-top: 10px;
+		/*外側上の余白設定*/
+		margin-bottom: 10px;
+		/*外側下の余白設定*/
+		margin-left: 4%;
+		/*外側左の余白設定*/
+		font-size: 100%;
+		/*文字サイズ*/
+	}
+
+	.voice_p {
+		margin: 0 4%;
+		/*外側の余白設定*/
+		font-size: 100%;
+		/*文字サイズ*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+よくある質問のCSS
+------------------------------------------------------------------------------------------------------------
+*/
+
+	.question_h {
+		margin: 0 4%;
+		/*文字サイズ*/
+		vertical-align: middle;
+		/*外側の余白設定*/
+		font-size: 110%;
+		/*縦の中央配置*/
+	}
+
+	.question p {
+		padding: 2px 0;
+		/*文字サイズ*/
+		background-color: #fff;
+		/*内側の余白設定*/
+		font-size: 100%;
+		/*背景色設定*/
+	}
+
+	.question_box {
+		width: 80%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin: 0 4% 20px 15%;
+		/*外側の余白設定*/
+	}
+
+	.question_box_02 {
+		width: 80%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin: 0 4% 20px 15%;
+		/*外側の余白設定*/
+	}
+
+	.question_box_03 {
+		width: 80%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin: 0 4% 20px 15%;
+		/*外側の余白設定*/
+	}
+
+	.question_box_04 {
+		width: 80%;
+		/*横幅設定*/
+		height: auto;
+		/*高さ設定*/
+		margin: 0 4% 20px 15%;
+		/*外側の余白設定*/
+	}
+
+	.tokuten01 {
+		width: 92%;
+		/*影の設定*/
+		margin: 0 4%;
+		/*横幅設定*/
+		border-radius: 5px;
+		/*要素の角丸設定*/
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+		/*外側の余白設定*/
+	}
+
+
+
+	/*
+------------------------------------------------------------------------------------------------------------
+FooterのCSS
+------------------------------------------------------------------------------------------------------------
+*/
+	footer {
+		/*mobile*/
+		width: 100%;
+		/*文字サイズ*/
+		margin-bottom: 15px;
+		/*横幅設定*/
+		font-size: 60%;
+		/*外側下の余白設定*/
+	}
+
+	.footer__inner li {
+		font-size: 150%;
+		/*文字サイズ*/
+	}
+
+	footer .img-center {
+		font-size: 120%;
+		/*文字サイズ*/
+	}
+}
