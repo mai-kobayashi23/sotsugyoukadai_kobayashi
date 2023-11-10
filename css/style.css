@@ -418,16 +418,12 @@ FVのCSS
 }
 
 .join_main_btn {
-	/* margin-top: -300px;
-	margin-bottom: 119px; */
 	position: relative;
 	width: 90%;
 	transform: translate(5%,-180%);
 }
 
 .company_main_btn {
-	/* margin-top: -300px;
-	margin-bottom: 119px; */
 	position: relative;
 	width: 90%;
 	transform: translate(5%,-160%);
@@ -656,52 +652,6 @@ FVのCSS
 ------------------------------------------------------------------------------------------------------------
 */
 
-.join_box {
-	width: 100%;
-	text-align: center;
-	/*背景色設定*/
-	border-radius: 5px;
-	/*横幅設定*/
-	background-color: #fff;
-	/*要素の角丸設定*/
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-	/*ブロック要素を中央配置*/
-}
-
-.join_box img {
-	margin-top: 20px;
-	/*外側上の余白設定*/
-}
-
-.join_box_img01 {
-	width: 45%;
-	/*横幅設定*/
-}
-
-.join_box_img02 {
-	width: 70%;
-	/*横幅設定*/
-}
-
-.join_box_img03 {
-	width: 58%;
-	/*横幅設定*/
-}
-
-.join_box h3 {
-	padding-top: 20px;
-	/*内側上の余白設定*/
-}
-
-.join_box p {
-	/*文字サイズ*/
-	padding-top: 20px;
-	/*内側上の余白設定*/
-	padding-bottom: 30px;
-	font-size: 24px;
-	/*内側下の余白設定*/
-}
-
 .btn {
 	/*外側の余白設定*/
 	width: 70%;
@@ -827,8 +777,6 @@ hr {
 	position: relative;
 	/*外側の余白設定*/
 	height: 980px;
-	/*要素の位置をずらす(相対関係)*/
-	margin: 120px 0;
 }
 
 
@@ -1060,18 +1008,12 @@ hr {
 	/*外側の余白設定*/
 }
 
-.form {
-	margin-top: 120px;
-	/*外側上の余白設定*/
-}
-
 .form_img {
 	margin-top: 50px;
 	/*外側上の余白設定*/
 	margin-bottom: 20px;
 	/*外側下の余白設定*/
 }
-
 
 
 /*
@@ -1500,30 +1442,6 @@ FVのCSS
 イベントの参加方法のCSS
 ------------------------------------------------------------------------------------------------------------
 */
-	.join_box {
-		width: 100%;
-		/*横幅設定*/
-	}
-
-	.join_box p {
-		font-size: 100%;
-		/*文字サイズ*/
-	}
-
-	.join_box_img01 {
-		width: 90%;
-		/*横幅設定*/
-	}
-
-	.join_box_img02 {
-		width: 90%;
-		/*横幅設定*/
-	}
-
-	.join_box_img03 {
-		width: 90%;
-		/*横幅設定*/
-	}
 
 
 
