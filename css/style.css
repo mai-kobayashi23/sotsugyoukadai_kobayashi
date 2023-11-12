@@ -360,9 +360,6 @@ FVのCSS
 ------------------------------------------------------------------------------------------------------------
 */
 .seminar2 {
-	/*ブロック要素を中央配置*/
-	padding-bottom: 50px;
-	/*背景色設定*/
 	text-align: center;
 	background-color: #fffbc6;
 }
@@ -413,27 +410,29 @@ FVのCSS
 .main_btn {
 	/*外側上の余白設定*/
 	width: 90%;
-	margin-top: 30px;
+	margin-top: 10px;
 	/*横幅設定*/
 }
 
 .join_main_btn {
-	position: relative;
+	display: block;
 	width: 90%;
-	transform: translate(5%,-180%);
+	margin-top: -45%;
+	margin-left: 5%;
 }
 
 .company_main_btn {
-	position: relative;
+	display: block;
 	width: 90%;
-	transform: translate(5%,-160%);
+	margin-top: -40%;
+	margin-left: 5%;
 }
 
 .line_btn {
 	/*外側上の余白設定*/
 	width: 90%;
 	margin-top: 20px;
-	margin-bottom: 70px;
+	margin-bottom: 15%;
 	/*横幅設定*/
 }
 
@@ -651,6 +650,10 @@ FVのCSS
 イベントの参加方法のCSS
 ------------------------------------------------------------------------------------------------------------
 */
+.join {
+	position: relative;
+	display: inline-block;
+}
 
 .btn {
 	/*外側の余白設定*/
@@ -666,6 +669,11 @@ FVのCSS
 本イベントは株式会社Live出版が主催していますのCSS
 ------------------------------------------------------------------------------------------------------------
 */
+
+.company {
+	position: relative;
+	display: inline-block;
+}
 
 .company_box {
 	width: 100%;
@@ -1296,7 +1304,7 @@ FVのCSS
 	.line_btn {
 		width: 70%;
 		/*横幅設定*/
-		margin-top: 25px;
+		margin-top: 10px;
 		/*外側上の余白設定*/
 	}
 
@@ -1521,10 +1529,8 @@ FVのCSS
 	.speaker {
 		/*高さ設定*/
 		position: relative;
-		height: 550px;
+		height: 498px;
 		/*要素の位置をずらす(相対関係)*/
-		margin: 80px 0;
-		/*外側の余白設定*/
 	}
 
 	.speaker_p {
